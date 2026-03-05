@@ -80,7 +80,7 @@ final class NotificationMakeCommand extends GeneratorCommand
     {
         return [
             ['name', InputArgument::REQUIRED, 'Nom de la classe de notification.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
 }

@@ -49,7 +49,7 @@ class ProviderMakeCommand extends GeneratorCommand
     {
         return [
             ['name', InputArgument::REQUIRED, 'Nom du service provider.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
 

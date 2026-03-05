@@ -76,7 +76,7 @@ class PublishCommand extends Command
     protected function getArguments()
     {
         return [
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
 }

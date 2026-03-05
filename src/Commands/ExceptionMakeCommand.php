@@ -69,7 +69,7 @@ class ExceptionMakeCommand extends GeneratorCommand
     {
         return [
             ['name', InputArgument::REQUIRED, 'Nom exception.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
 }

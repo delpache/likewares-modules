@@ -78,7 +78,7 @@ class ControllerMakeCommand extends GeneratorCommand
     {
         return [
             ['controller', InputArgument::REQUIRED, 'Nom du controller.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
 

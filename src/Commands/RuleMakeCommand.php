@@ -47,7 +47,7 @@ class RuleMakeCommand extends GeneratorCommand
     {
         return [
             ['name', InputArgument::REQUIRED, 'Nom de la règle de validation.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
 

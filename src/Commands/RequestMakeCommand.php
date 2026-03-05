@@ -47,7 +47,7 @@ class RequestMakeCommand extends GeneratorCommand
     {
         return [
             ['name', InputArgument::REQUIRED, 'Nom de la request.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
 

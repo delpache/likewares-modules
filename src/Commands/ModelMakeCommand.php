@@ -72,7 +72,7 @@ class ModelMakeCommand extends GeneratorCommand
     {
         return [
             ['model', InputArgument::REQUIRED, 'Nom du modèle qui sera créé.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
 

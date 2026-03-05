@@ -103,7 +103,7 @@ abstract class GeneratorCommand extends Command
     {
         return [
             ['name', InputArgument::REQUIRED, 'Nom du cast.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', '']
+            ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null]
         ];
     }
 }

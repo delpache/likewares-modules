@@ -123,6 +123,7 @@ class FileGenerator extends Generator
 
     /**
      * Generate the file.
+     * @throws FileAlreadyExistException
      */
     public function generate()
     {
@@ -136,6 +137,6 @@ class FileGenerator extends Generator
             return $this->filesystem->put($path, $this->getContents());
         }
 
-        throw new FileAlreadyExistException('File already exists!');
+        throw new FileAlreadyExistException('Le fichier existe déjà!');
     }
 }

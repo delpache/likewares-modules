@@ -38,7 +38,7 @@ class MigrationMakeCommand extends GeneratorCommand
     {
         return [
             ['name', InputArgument::REQUIRED, 'Nom de la migration sera créé.'],
-            ['alias', InputArgument::OPTIONAL, 'Alias du module sera créé.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module sera créé.', null],
         ];
     }
 

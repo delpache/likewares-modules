@@ -123,8 +123,8 @@ class InstallCommand extends Command
     protected function getArguments()
     {
         return [
-            ['alias', InputArgument::OPTIONAL, 'Alias du module à installer.', ''],
-            ['version', InputArgument::OPTIONAL, 'La version du module à installer.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Alias du module à installer.', null],
+            ['version', InputArgument::OPTIONAL, 'La version du module à installer.', null],
         ];
     }
 

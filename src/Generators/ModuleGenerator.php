@@ -246,7 +246,7 @@ class ModuleGenerator extends Generator
             if ($this->force) {
                 $this->module->delete($this->alias);
             } else {
-                $this->console->error("Module [{$this->alias}] already exist!");
+                $this->console->error("Le Module [{$this->alias}] existe déjà !");
 
                 return;
             }
@@ -265,7 +265,7 @@ class ModuleGenerator extends Generator
             $this->cleanModuleJsonFile();
         }
 
-        $this->console->info("Module [{$this->alias}] created successfully.");
+        $this->console->info("Module [{$this->alias}] créé avec succès.");
     }
 
     /**
@@ -313,7 +313,7 @@ class ModuleGenerator extends Generator
 
             $this->filesystem->put($path, $this->getStubContents($stub));
 
-            $this->console->info("Created : {$path}");
+            $this->console->info("Créé : {$path}");
         }
     }
 
@@ -332,7 +332,7 @@ class ModuleGenerator extends Generator
 
         if (GenerateConfigReader::read('provider')->generate() === true) {
             $this->console->call('module:make-provider', [
-                'name' => 'Main',
+                'name' => 'MainServiceProvider',
                 'alias' => $this->alias,
                 '--master' => true,
             ]);
@@ -340,7 +340,7 @@ class ModuleGenerator extends Generator
 
         if (GenerateConfigReader::read('controller')->generate() === true) {
             $this->console->call('module:make-controller', [
-                'controller' => 'Main',
+                'controller' => 'MainController',
                 'alias' => $this->alias,
             ]);
         }
@@ -412,7 +412,7 @@ class ModuleGenerator extends Generator
 
         $this->filesystem->put($path, $this->getStubContents('json'));
 
-        $this->console->info("Created : {$path}");
+        $this->console->info("Créé : {$path}");
     }
 
     /**

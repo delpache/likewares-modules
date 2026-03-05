@@ -56,7 +56,7 @@ class DumpCommand extends Command
     protected function getArguments()
     {
         return [
-            ['alias', InputArgument::OPTIONAL, 'Module alias.', ''],
+            ['alias', InputArgument::OPTIONAL, 'Module alias.', null],
         ];
     }
 }
