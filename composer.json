@@ -1,6 +1,6 @@
 {
-    "name": "likewares/laravel-module",
-    "description": "Gestion de module pour Laravel",
+    "name": "likewares/likewares-modules",
+    "description": "Package permettant de générer des modules",
     "license": "MIT",
     "authors": [
         {
