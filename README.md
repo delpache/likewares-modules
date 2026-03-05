@@ -9,7 +9,7 @@ Ce package a pour but de rendre votre application Laravel extensible via des mod
 Exécutez la commande suivante :
 
 ```bash
-composer require likewares/laravel-module
+composer require likewares/likewares-modules
 ```
 
 ### 2. Enregistrement
