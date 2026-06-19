@@ -92,7 +92,7 @@ class ObserverMakeCommand extends GeneratorCommand
     protected function getArguments()
     {
         return [
-            ['name', InputArgument::REQUIRED, 'Nom de l\'observer','.'],
+            ['name', InputArgument::REQUIRED, 'Nom de l\'observer'],
             ['alias', InputArgument::OPTIONAL, 'Alias du module qui sera utilisé.', null],
         ];
     }
