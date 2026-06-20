@@ -7,7 +7,7 @@ use Likewares\Module\Contracts\IRepositoryInterface;
 use Likewares\Module\Laravel\LaravelFileRepository;
 use Likewares\Module\Support\Stub;
 
-class Laravel extends Main
+class LaravelServiceProvider extends MainServiceProvider
 {
     /**
      * Booting the package.

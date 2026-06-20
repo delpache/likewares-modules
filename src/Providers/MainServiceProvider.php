@@ -5,7 +5,7 @@ namespace Likewares\Module\Providers;
 use Likewares\Module\Contracts\IRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
-abstract class Main extends ServiceProvider
+abstract class MainServiceProvider extends ServiceProvider
 {
     /**
      * Booting the package.
@@ -26,7 +26,7 @@ abstract class Main extends ServiceProvider
      */
     protected function registerModules()
     {
-        $this->app->register(Bootstrap::class);
+        $this->app->register(BootstrapServiceProvider::class);
     }
 
     /**
@@ -59,7 +59,7 @@ abstract class Main extends ServiceProvider
      */
     protected function registerProviders()
     {
-        $this->app->register(Console::class);
-        $this->app->register(Contracts::class);
+        $this->app->register(ConsoleServiceProvider::class);
+        $this->app->register(ContractsServiceProvider::class);
     }
 }

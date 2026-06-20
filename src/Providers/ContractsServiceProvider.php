@@ -6,7 +6,7 @@ use Likewares\Module\Contracts\IRepositoryInterface;
 use Likewares\Module\Laravel\LaravelFileRepository;
 use Illuminate\Support\ServiceProvider;
 
-class Contracts extends ServiceProvider
+class ContractsServiceProvider extends ServiceProvider
 {
     /**
      * Register some binding.

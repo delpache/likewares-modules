@@ -18,7 +18,7 @@ Le Service provider et la façade seront enregistrés automatiquement. Si vous v
 
 ```php
 Likewares\Module\Facade::class,
-Likewares\Module\Providers\Laravel::class,
+Likewares\Module\Providers\LaravelServiceProvider::class,
 ```
 
 ### 3. Publication

@@ -5,7 +5,7 @@ namespace Likewares\Module\Providers;
 use Likewares\Module\Contracts\IRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
-class Bootstrap extends ServiceProvider
+class BootstrapServiceProvider extends ServiceProvider
 {
     /**
      * Booting the package.

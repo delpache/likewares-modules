@@ -5,7 +5,7 @@ namespace Likewares\Module\Providers;
 use Likewares\Module\Commands;
 use Illuminate\Support\ServiceProvider;
 
-class Console extends ServiceProvider
+class ConsoleServiceProvider extends ServiceProvider
 {
     /**
      * The available commands

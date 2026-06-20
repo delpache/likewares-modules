@@ -7,7 +7,7 @@ use Likewares\Module\Contracts\IRepositoryInterface;
 use Likewares\Module\Lumen\LumenFileRepository;
 use Likewares\Module\Support\Stub;
 
-class Lumen extends Main
+class LumenServiceProvider extends MainServiceProvider
 {
     /**
      * Booting the package.
