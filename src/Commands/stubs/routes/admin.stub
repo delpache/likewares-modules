@@ -1,0 +1,14 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Admin Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register admin routes for this module.
+|
+*/
+
+Route::prefix('admin/$ALIAS$')->group(function () {
+    Route::get('/', '$STUDLY_NAME$Controller@index');
+});

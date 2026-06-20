@@ -1,0 +1,17 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Listeners;
+
+class FinishInstallation
+{
+    /**
+     * Handle the event.
+     *
+     * @param mixed $event
+     * @return void
+     */
+    public function handle($event)
+    {
+        //
+    }
+}
