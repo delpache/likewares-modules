@@ -7,6 +7,7 @@ use Illuminate\Console\Command as Console;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 use Likewares\Module\FileRepository;
+use Likewares\Module\Module;
 use Likewares\Module\Support\Config\GenerateConfigReader;
 use Likewares\Module\Support\Stub;
 
@@ -43,7 +44,7 @@ class ModuleGenerator extends Generator
     /**
      * The module instance.
      *
-     * @var \Likewares\Module\Module
+     * @var Module
      */
     protected $module;
 
@@ -64,10 +65,10 @@ class ModuleGenerator extends Generator
     /**
      * The constructor.
      * @param $alias
-     * @param FileRepository $module
-     * @param Config     $config
-     * @param Filesystem $filesystem
-     * @param Console    $console
+     * @param FileRepository|null $module
+     * @param Config|null $config
+     * @param Filesystem|null $filesystem
+     * @param Console|null $console
      */
     public function __construct(
         $alias,
@@ -182,7 +183,7 @@ class ModuleGenerator extends Generator
     /**
      * Get the module instance.
      *
-     * @return \Likewares\Module\Module
+     * @return Module
      */
     public function getModule()
     {

@@ -2,6 +2,7 @@
 
 namespace Likewares\Module;
 
+use Illuminate\Contracts\Foundation\Application;
 use Likewares\Module\Contracts\IActivatorInterface;
 use Illuminate\Cache\CacheManager;
 use Illuminate\Container\Container;
@@ -18,7 +19,7 @@ abstract class Module
     /**
      * The laravel|lumen application instance.
      *
-     * @var \Illuminate\Contracts\Foundation\Application|\Laravel\Lumen\Application
+     * @var Application|\Laravel\Lumen\Application
      */
     protected $app;
 

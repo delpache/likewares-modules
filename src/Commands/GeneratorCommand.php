@@ -5,6 +5,7 @@ namespace Likewares\Module\Commands;
 use Illuminate\Console\Command;
 use Likewares\Module\Exceptions\FileAlreadyExistException;
 use Likewares\Module\Generators\FileGenerator;
+use Likewares\Module\Module;
 use Symfony\Component\Console\Input\InputArgument;
 
 abstract class GeneratorCommand extends Command
@@ -76,7 +77,7 @@ abstract class GeneratorCommand extends Command
     /**
      * Get class namespace.
      *
-     * @param \Likewares\Module\Module $module
+     * @param Module $module
      *
      * @return string
      */

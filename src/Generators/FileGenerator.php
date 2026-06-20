@@ -24,7 +24,7 @@ class FileGenerator extends Generator
     /**
      * The laravel filesystem or null.
      *
-     * @var \Illuminate\Filesystem\Filesystem|null
+     * @var Filesystem|null
      */
     protected $filesystem;
 

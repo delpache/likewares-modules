@@ -2,6 +2,7 @@
 
 namespace Likewares\Module;
 
+use Exception;
 use Illuminate\Filesystem\Filesystem;
 use Likewares\Module\Exceptions\InvalidJsonException;
 
@@ -17,7 +18,7 @@ class Json
     /**
      * The laravel filesystem instance.
      *
-     * @var \Illuminate\Filesystem\Filesystem
+     * @var Filesystem
      */
     protected $filesystem;
 
@@ -31,8 +32,9 @@ class Json
     /**
      * The constructor.
      *
-     * @param mixed                             $path
-     * @param \Illuminate\Filesystem\Filesystem $filesystem
+     * @param mixed $path
+     * @param Filesystem|null $filesystem
+     * @throws Exception
      */
     public function __construct($path, Filesystem $filesystem = null)
     {
@@ -92,10 +94,11 @@ class Json
     /**
      * Make new instance.
      *
-     * @param string                            $path
-     * @param \Illuminate\Filesystem\Filesystem $filesystem
+     * @param string $path
+     * @param Filesystem|null $filesystem
      *
      * @return static
+     * @throws Exception
      */
     public static function make($path, Filesystem $filesystem = null)
     {
@@ -115,7 +118,7 @@ class Json
     /**
      * Get file contents as array.
      * @return array
-     * @throws \Exception
+     * @throws Exception
      */
     public function getAttributes()
     {
