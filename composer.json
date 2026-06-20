@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelServiceProvider"
+                "Likewares\\Module\\Providers\\LaravelServiceProvider"
             ],
             "aliases": {
                 "Module": "Likewares\\Module\\Facade"
